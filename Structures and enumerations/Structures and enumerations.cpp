@@ -2,7 +2,7 @@
 
 using namespace std;
 
-enum month
+enum class month
 {
 	january = 1,
 	february,
@@ -28,40 +28,40 @@ int main()
 	{
 		switch (num)
 		{
-		case month::september:
+		case static_cast<int>(month::september):
 			cout << "Сентябрь" << endl;
 			break;
-		case month::october:
+		case static_cast<int>(month::october):
 			cout <<  "Октябрь" << endl;
 			break;
-		case month::november:
+		case static_cast<int>(month::november):
 			cout << "Ноябрь" << endl;
 			break;
-		case month::december:
+		case static_cast<int>(month::december):
 			cout << "Декабрь" << endl;
 			break;
-		case month::january:
+		case static_cast<int>(month::january):
 			cout << "Январь" << endl;
 			break;
-		case month::february:
+		case static_cast<int>(month::february):
 			cout << "Февраль" << endl;
 			break;
-		case month::march:
+		case static_cast<int>(month::march):
 			cout << "Март" << endl;
 			break;
-		case month::april:
+		case static_cast<int>(month::april):
 			cout << "Апрель" << endl;
 			break;
-		case month::may:
+		case static_cast<int>(month::may):
 			cout << "Май" << endl;
 			break;
-		case month::june:
+		case static_cast<int>(month::june):
 			cout << "Июнь" << endl;
 			break;
-		case month::july:
+		case static_cast<int>(month::july):
 			cout << "Июль" << endl;
 			break;
-		case month::august:
+		case static_cast<int>(month::august):
 			cout << "Август" << endl;
 			break;
 		default:
